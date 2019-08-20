@@ -7,11 +7,17 @@ object pepita {
 	var energia = 0
 	method energia() { return energia }
 	method comer(cosa, gramos) { energia += cosa.energiaPorGramo() * gramos }
+	//     							energia=energia+ cosa.energiaPorGrama()*gramos    es lo mismo
+	
 	method volar(kms) { energia -= kms + 10 }
 	
 	// metodos nuevos
-	method estaDebil() { return true }  // implementar
-	method estaFeliz() { return true }  // implementar
+	method estaDebil() {
+		 return energia < 50
+		 }  // implementar
+	method estaFeliz() { 
+		return energia >=500 and energia <=1000
+	}  // implementar energia.between(500,1000)
 	
 	method cuantoQuiereVolar() { 
 		var cuanto = energia / 5
