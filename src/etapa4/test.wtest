@@ -1,0 +1,12 @@
+
+
+test "roque trabaja" {
+    roque.tuPupiloEs(pepita)
+    assert.equals(pepita,recordarAve)
+    roque.entrenar()
+    roque.tuPupiloEs(pipa)
+    assert.equals(pipa,recordarAve)
+    roque.entrenar()
+	assert(pepita==recordarAve)
+
+}

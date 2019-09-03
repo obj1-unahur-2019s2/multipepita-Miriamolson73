@@ -9,7 +9,7 @@ object roque {
 	var recordarAve=null
 	method tuPupiloEs(ave) { 
 		recordarAve=ave
-	
+		return ave	
 	} // implementar
 	
 	method entrenar() { 
