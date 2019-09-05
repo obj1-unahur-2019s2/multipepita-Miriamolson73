@@ -4,7 +4,7 @@ import comidas.*
 object pepon {
 	// aca falta un atributo
 	var energia=0
-	
+	method energia() { return energia }
 	method comer(cosa, cuanto) {energia += ((cosa.energiaPorGramo() * cuanto)/2)}  // implementar
 	method volar(kms) { energia -= ( 1+(kms*0.5))}           // implementar
 	method haceLoQueQuieras() { self.volar(1)	}   // implementar
@@ -16,6 +16,7 @@ object pipa {
 	var energia=0
 	var kilometros=0
 	var gramosIng=0
+	method energia() { return energia }
 	method comer(cosa, cuanto) {
 		energia += ((cosa.energiaPorGramo() * cuanto))/2
 		gramosIng+=cuanto

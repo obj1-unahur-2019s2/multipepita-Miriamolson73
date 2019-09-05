@@ -28,9 +28,9 @@ object marDelPlata {
 	}	
 }
 object noroeste {
-		var energia=pepita.energia()
+		var energia=0
 		
-	method energiaRevitalizadora(ave){return energia+=energia *0.1}
+	method energiaRevitalizadora(ave){return energia=ave.energia() *0.1}
 	
 	
 }
